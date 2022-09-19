@@ -1,0 +1,36 @@
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	row-gap: 50px;
+	grid-template-areas: "topleft topright" "main main" "bottomleft bottomright";
+	background-image: url("./img/middle-earth.jpeg");
+}
+
+.celebrimbor {
+	grid-area: topleft;
+	align-self: center;
+	opacity: 0.8;
+}
+
+.galadriel {
+	grid-area: topright;
+	justify-self: end;
+	opacity: 0.8;
+}
+
+.gandalf {
+	grid-area: main;
+	justify-self: center;
+	opacity: 0.8;
+}
+
+.gil-galad {
+	grid-area: bottomleft;
+	opacity: 0.8;
+}
+
+.glorfindel {
+	grid-area: bottomright;
+	align-self: end;
+	opacity: 0.8;
+}
